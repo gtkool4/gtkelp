@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkBox" id="mainbox">
+    <property name="orientation">vertical</property>
+    <child>
+      <object class="GtkHeaderBar" id="menubar">
+        <child type="start">
+          <object class="GtkButton" id="cut">
+            <property name="icon-name">edit-cut</property>
+            <property name="tooltip-text" translatable="yes">Cut</property>
+        </object>
+        </child>
+        <child type="start">
+          <object class="GtkButton" id="copy">
+            <property name="icon-name">gtk-copy</property>
+            <property name="tooltip-text" translatable="yes">Copy</property>
+          </object>
+        </child>
+        <child type="start">
+          <object class="GtkButton" id="paste">
+            <property name="icon-name">gtk-paste</property>
+            <property name="tooltip-text" translatable="yes">Paste</property>
+          </object>
+        </child>
+        <child type="end">
+          <object class="GtkSeparator" id="sep">
+            <property name="orientation">vertical</property>
+          </object>
+        </child>
+        <child type="end">
+          <object class="GtkButton" id="quit">
+            <property name="icon-name">gtk-quit</property>
+            <property name="tooltip-text" translatable="yes">Quit</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkTextView" id="text">
+        <property name="hexpand">TRUE</property>
+        <property name="vexpand">TRUE</property>
+      </object>
+    </child>
+  </object>
+</interface>
